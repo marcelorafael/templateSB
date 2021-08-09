@@ -18,5 +18,7 @@ module.exports = {
   moduleNameMapper: {
     '@/(.*)': '<rootDir>/src/$1',
     '\\.svg': '<rootDir>/__mocks__/svgMock.js'
-  }
+  },
+  setupFilesAfterEnv: ['@testing-library/jest-native/extend-expect'],
+  moduleDirectories: ['node_modules', 'utils', __dirname]
 }

@@ -10,7 +10,14 @@
     "noEmit": true,
     "strict": true,
     "target": "esnext",
+    "baseUrl": "src",
+    "paths": {
+      "test-utils": ["./utils/test-utils"]
+    }
   },
+  "include": [
+    "./setup.ts"
+  ],
   "exclude": [
     "node_modules",
     "babel.config.js",
