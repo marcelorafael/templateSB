@@ -1,11 +1,11 @@
-import React from 'react';
-import { CryptoDetail, Transaction } from "../src/presentation/Screens";
-import { createStackNavigator } from "@react-navigation/stack";
-import { NavigationContainer } from '@react-navigation/native';
+import React from 'react'
+import { CryptoDetail, Transaction } from '../src/presentation/Screens'
+import { createStackNavigator } from '@react-navigation/stack'
+import { NavigationContainer } from '@react-navigation/native'
 
-import Tabs from "../navigation/tabs";
+import Tabs from '../navigation/tabs'
 
-const Stack = createStackNavigator();
+const Stack = createStackNavigator()
 
 const Routes = () => {
   return (
@@ -16,21 +16,12 @@ const Routes = () => {
         }}
         initialRouteName={'Home'}
       >
-        <Stack.Screen
-          name="Home"
-          component={Tabs}
-        />
-        <Stack.Screen
-          name="CryptoDetail"
-          component={CryptoDetail}
-        />
-        <Stack.Screen
-          name="Transaction"
-          component={Transaction}
-        />
+        <Stack.Screen name="Home" component={Tabs} />
+        <Stack.Screen name="CryptoDetail" component={CryptoDetail} />
+        <Stack.Screen name="Transaction" component={Transaction} />
       </Stack.Navigator>
     </NavigationContainer>
   )
 }
 
-export default Routes;
+export default Routes

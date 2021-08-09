@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Title } from './Home.styles';
+import { Container, Title } from './Home.styles'
 
 const Home: React.FC = () => {
   return (
@@ -8,5 +8,5 @@ const Home: React.FC = () => {
     </Container>
   )
 }
-const HomeMemo = React.memo(Home);
+const HomeMemo = React.memo(Home)
 export { HomeMemo as Home }
