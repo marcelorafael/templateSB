@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 import { ThemeProvider } from 'styled-components'
-import Routes from './Routes/Routes';
-import theme from './constants/theme';
+import Routes from './Routes/Routes'
+import theme from './constants/theme'
 
 const App = () => {
   return (
@@ -11,5 +11,5 @@ const App = () => {
   )
 }
 
-export default require('./storybook').default
-// export default App
+// export default require('./storybook').default
+export default App
